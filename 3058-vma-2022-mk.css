@@ -1,0 +1,1090 @@
+/* Villa Maria Academy High School #3058
+   created 3/10/22 mk */
+body {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: none;
+  line-height: 1.6;
+  color: #3d3e3e;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#admin-pages-link a {
+  position: relative;
+  font-size: 14px;
+  z-index: 100000;
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#admin-pages-link a:hover {
+  text-decoration: underline;
+}
+
+#sysmsg-link a {
+  position: relative;
+  font-size: 14px;
+  z-index: 100000;
+  color: #000;
+  text-decoration: none;
+}
+
+#sysmsg-link a:hover {
+  text-decoration: underline;
+}
+
+#pass_description li {
+  list-style: square;
+}
+
+#TXTpass_description li {
+  list-style: square;
+}
+
+#mem_desc li {
+  list-style: square;
+}
+
+/* ----------- Global settings ---------- */
+/* Offsets the margin added to p tags so text is aligned across the page */
+p {
+  margin-top: 0;
+}
+
+/* Sets modal text color to black - required when body color is light */
+[class^="modal-"] {
+  color: #000;
+}
+
+/* Additional space below user name after log in */
+#user-status {
+  margin-bottom: 25px;
+}
+
+/* Styles the hr tag, often used between show descriptions on main ticketing page */
+hr {
+  color: #ccc;
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  width: 100%;
+}
+
+/* --------------- Header --------------- */
+.header {
+  height: 122px;
+  width: 100%;
+  text-align: left;
+  background-color: #001e62;
+  padding-top: 0.5rem;
+  z-index: 1000;
+  position: relative;
+}
+
+.header-inner {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.logo-wrapper {
+  height: auto;
+  position: relative;
+  padding: 5px;
+}
+
+.logo {
+  backface-visibility: hidden;
+  height: auto;
+  position: relative;
+  width: 74px;
+  margin-right: 20px;
+  float: left;
+}
+
+.header-inner h2 {
+  color: #fff;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 42px;
+  margin-bottom: 0.8rem;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 20px;
+  letter-spacing: -.3px;
+}
+
+.bg {
+  /* height: 450px; */
+  /* background: url("https://app.arts-people.com/uploads/3058/3058-vma-2022-bg.jpg"); */
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------- Navigation ------------- */
+nav {
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* ---------- Main content area --------- */
+.tt-page-160 .maincell ul {
+  list-style: disc;
+}
+
+.tt-page-3679 .maincell ul {
+  list-style: disc;
+}
+
+.tt-page-178 .maincell ul {
+  list-style: disc;
+}
+
+.tt-page-9498 .maincell ul {
+  list-style: disc;
+}
+
+.maincell {
+  margin: 30px auto 0px;
+  padding: 20px;
+  max-width: 1100px;
+  position: relative;
+  min-height: 500px;
+}
+
+/* ------------- Links ------------------ */
+/* Link outside of .content section, e.g. admin links at top of page, footer section */
+a {
+  color: #6499cd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #da291c;
+  text-decoration: none;
+}
+
+/* Link in divs or tables with content class (those inside a table or div with .content class) Include/style if
+   the content area background color contrasts the page background. If no contrast, these rules can be removed */
+.content a {
+  color: #6499cd;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #da291c;
+  text-decoration: none;
+}
+
+.tt-page-178 #A2538 {
+  color: #6499cd;
+  text-decoration: none;
+  margin-left: -12px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.tt-page-178 #A2538:hover {
+  color: #da291c;
+  text-decoration: none;
+}
+
+#user-status a {
+  background-color: #ecececd9;
+  border-radius: 3px;
+  opacity: 1;
+  color: #000;
+  padding: 3px 5px;
+  text-decoration: underline;
+  border-bottom: 0;
+}
+
+#user-status a:hover {
+  background-color: #b7b7b7d6;
+  border-radius: 3px;
+  color: #000;
+  opacity: 1;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+/* Styles buy/add buttons on following buy paths: Main ticketing, Retail, Membership, Passes */
+#Abuy_tickets, #Aitem_select, #Apass_select, #mem_select a {
+  margin: 0px 10px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 12px 16px;
+  color: #abcae9;
+  border: solid 1px #001e62;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #001e62;
+  font-weight: 700;
+}
+
+#Abuy_tickets:hover, #Aitem_select:hover, #mem_select a:hover, #Apass_select:hover {
+  color: #abcae9;
+  background: #03153d;
+}
+
+.tt-page-9498 .restore_pos {
+  display: inline-block;
+  margin: 0px 3px;
+  min-width: 290px;
+  display: inline-block;
+  padding: 12px 16px;
+  color: #abcae9;
+  border: solid 1px #001e62;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #001e62;
+  font-weight: 700;
+}
+
+.tt-page-9498 .restore_pos:hover {
+  color: #abcae9;
+  background: #03153d;
+}
+
+/* Removes underline on button label text. Necessary if a link is underlined*/
+.btn-primary {
+  color: #ffffff !important;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.btn-default {
+  text-decoration: none !important;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin-left: 5px;
+}
+
+/*Create Patron Record Button */
+.create {
+  position: relative;
+  left: 89px;
+}
+
+/* --------------- Fonts ---------------- */
+/* normal and content classes are included throughout the code;
+   These declarations should match body */
+.normal {
+  color: #3d3e3e;
+  font-size: 16px;
+}
+
+.content {
+  font-size: 16px;
+}
+
+h1 {
+  margin-top: 0px;
+  font-family: 'Roboto Slab', serif;
+  color: #6499cd;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: 'Roboto Slab', serif;
+  color: #3d3e3e;
+  font-style: normal;
+  line-height: 1.1;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.emph {
+  color: #000;
+  font-weight: bold;
+}
+
+.message {
+  background-color: #001e62;
+  color: #f7f7f7;
+  font-size: 150%;
+  padding: 5px;
+}
+
+.error {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 150%;
+  padding: 5px;
+}
+
+.tt-page-794 .help-block {
+  color: #fff !important;
+  font-size: 20px;
+  background-color: red;
+  padding: 5px 16px;
+}
+
+/* ------------ BUY TICKETS ------------- */
+/* Adds line separator between shows on main ticketing page */
+.tt-page-160 .show_text_div {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  min-width: 200px;
+}
+
+.tt-page-160 th div.show_text_div {
+  border: transparent;
+}
+
+.tt-page-160 .show_text_div li {
+  list-style-type: disc;
+}
+
+/*removes hr from top show on MTP*/
+#TBL412>tbody>tr:nth-child(2)>td>table>tbody>tr:nth-child(2)>td:nth-child(2)>div {
+  border-top: 1px solid transparent;
+  padding-top: 5px;
+}
+
+/* Add vert spacing between show img and desc on Select a perf page */
+.tt-page-178 .show_text_div {
+  padding-top: 20px;
+}
+
+/* Adds line separator between shows on preseason ticketing page */
+#TBL3686>tbody>tr:nth-child(3)>td>table>tbody>tr:nth-child(n)>td:nth-child(2) {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  min-width: 200px;
+}
+
+/*Removes hr from top event*/
+#TBL3686>tbody>tr:nth-child(3)>td>table>tbody>tr:nth-child(2)>td:nth-child(2) {
+  border: transparent;
+}
+
+/* Add horz space between show dividing line and buy tickets button */
+#Abuy_tickets {
+  margin-left: 10px;
+}
+
+/* Formats information sidebar on main ticketing page */
+#TBL180 {
+  width: 230px;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+
+/* Center add-on item check box on ticket buy path */
+#person_type_table input[type=checkbox] {
+  margin: 4px 0 0 45%;
+}
+
+/* Formats information sidebar on preseason page */
+#TBL3681 {
+  border-left: 1px solid #ccc;
+  padding-left: 5px;
+  width: 230px;
+}
+
+/* Formats col headers in review order table */
+.pp-order-summary th {
+  text-align: left;
+}
+
+/* ------------ Tables Global ----------- */
+/* Formats column header text */
+.headtext {
+  color: #fff;
+  font-weight: bold;
+}
+
+.htable th {
+  background-color: #001e62;
+  color: #fff;
+  padding: 0 15px;
+}
+
+.htable td {
+  color: #000;
+  padding: 1px 0px 1px;
+  text-align: left;
+}
+
+.tt-page-11182 #TBLsubscription-payment {
+  margin-left: 12px;
+}
+
+/* Formats tables, like the email table on the Customer Info page, and the "Subscribe" column header text in that table */
+.table-bordered th {
+  background-color: #001e62;
+  color: #fff;
+  padding: 3px 5px;
+  font-size: 15px;
+}
+
+/* Sets the asterisk color to white / increases font size - helpful if the table-bordered th background color is dark */
+.table-bordered .required_asterisk {
+  color: #ff0000;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+/* Email address table */
+#TBLemails td {
+  text-align: center;
+}
+
+/* --------------- PASSES --------------- */
+/* Vertically align text in passes for sale table */
+#TBLpasses td {
+  vertical-align: top;
+  padding: 10px 10px 10px 0;
+}
+
+#TBLpasses td:last-of-type {
+  padding-right: 0;
+}
+
+/* Adds vert spacing betwen Passes in Cart and Passes for Sale tables */
+#TBLpass_cart {
+  margin-bottom: 20px;
+}
+
+/* Formats table for gift certificate sales */
+#TBL5776 {
+  border-left: 0px solid #ccc;
+  padding-left: 5px;
+  min-width: 250px;
+}
+
+/* Formats width for "Add this item to your cart" text */
+#TBL4146 {
+  min-width: 230px;
+}
+
+.tt-page-6923 .leftCol {
+  padding-right: 15px;
+}
+
+/* ------------- ENROLLMENT ------------- */
+/* Adds padding between liability release text and signature block */
+.tt-page-9512 .kcolumn td {
+  padding: 0 20px 20px 0;
+}
+
+/* ------------- MEMBERSHIP ------------- */
+/* Formats membership listing table */
+#membership_level_table th {
+  background-color: #001e62;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 15px 5px 5px;
+  white-space: nowrap;
+}
+
+/* Formats membership listing table and renewal table on membership page */
+#mem_amount {
+  text-align: center;
+}
+
+/* Adds a dollar sign in front of the membership prices */
+td#mem_amount:before {
+  content: "$";
+}
+
+/* Formats Select Membership link on membership public page; supplemental to format in links section */
+#mem_select {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Adds padding to memberships in membership list */
+#membership_level_table td {
+  padding: 5px 3px;
+}
+
+/* Move Back to donation details button to the left, under Membership header */
+#BTNbackFromPayment {
+  position: relative;
+  left: -230px;
+}
+
+/* Formats the Membership Renewal table (not to be confused with the List of Memberships table) */
+#membership_table {
+  border-bottom: 1px dashed #333;
+  box-shadow: inset 0 -1px 0 0 #333, 0 1px 0 0 #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#membership_table th {
+  background-color: #001e62;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 8px 5px 10px;
+  vertical-align: top;
+}
+
+#membership_table td {
+  color: #000;
+  padding: 0 5px;
+}
+
+/* --------------- IMAGES --------------- */
+/* Images on main ticketing page */
+.show_image_div img {
+  width: 250px;
+  padding-right: 15px;
+  min-height: auto;
+  height: auto;
+}
+
+/* Images on Select a perf page */
+#TBL2885 #TBL236 img {
+  width: 250px;
+  padding-right: 5px;
+}
+
+.tt-page-178 #TBLperformances .image_user {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+/* Positions text at the top of cell instead of in the
+   middle, which tends to be the default otherwise */
+td {
+  vertical-align: top;
+  padding: 0;
+}
+
+.page_public {
+  width: 100%;
+}
+
+.pp-order-summary td {
+  font-family: unset;
+}
+
+/* ----------- SEATING CHART ------------ */
+/* Formats STAGE text on seatmap page */
+.stagelabel {
+  background-color: #242323;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tt-page-148 #TBL152 {
+  text-align: center;
+}
+
+/* Formats labels on dining table seating chart */
+.table {
+  background-color: #242323;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table_round {
+  background-color: #242323;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+}
+
+.diagtable {
+  background-color: #242323;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  -ms-transform: rotate(315deg);
+  /* IE 9 */
+  -webkit-transform: rotate(315deg);
+  /* Safari 3-8 */
+  transform: rotate(315deg);
+}
+
+.triangleleft {
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #242323;
+  border-left: 20px solid transparent;
+}
+
+.triangleright {
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #242323;
+  border-right: 20px solid transparent;
+}
+
+/* Formats row labels and other text on seatmap */
+.seat_label_td {
+  color: #000;
+  font-size: 13px;
+}
+
+#TBLbilling_info {
+  margin-left: 10px;
+}
+
+/* ----------- FOOTER SECTION ----------- */
+.upper-footer {
+  height: 345px;
+  padding: 65px 0 0 0;
+  background: #001e62;
+  color: #d7e4f4;
+  position: relative;
+  background-image: url(https://app.arts-people.com/uploads/3058/3058-vma-2022-building-blue2.png);
+  background-size: 56%;
+  background-repeat: no-repeat;
+  background-position: center 100%
+}
+
+.upper-footer-inner {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 16px 5px;
+  position: relative;
+  font-size: 13px;
+  border-top: 1px solid #d7e4f4;
+  color: #d7e4f4;
+  font-style: italic;
+  line-height: 1.45;
+  font-family: 'Roboto', Helvetica, Arial, "sans-serif";
+  letter-spacing: .1em;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  color: #d7e4f4;
+  line-height: 1.4em;
+  font-weight: 400;
+  background-color: #638dc9;
+  padding: 0 0 0 0;
+}
+
+.footer-wrapper p {
+  padding-top: 10px;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #d7e4f4;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Custom formatting below - mk */
+/*fixes formatting issues on subscription Pages */
+#CBshow_select input[type=checkbox] {
+  margin: 4px 0 0 45%;
+}
+
+.tt-page-10931 input[type=radio] {
+  margin: 4px 28px;
+  margin-top: 1px\9;
+  line-height: normal;
+}
+
+.tt-page-10931 #TBLpackages input[type=checkbox] {
+  text-align: center;
+  margin: 4px 0 0 30%;
+}
+
+.tt-page-10968 input[type=radio] {
+  margin: 4px 50px 0;
+  line-height: normal;
+}
+
+.tt-page-10968 .htable td {
+  color: #fff;
+  padding: 1px 10px 1px;
+  text-align: left;
+}
+
+#TBL11027>tbody>tr:nth-child(3)>td:nth-child(1)>table>tbody>tr:nth-child(1)>th:nth-child(2) {
+  min-width: 150px;
+}
+
+.tt-page-10968 #TBL11027>tbody>tr:nth-child(3)>td:nth-child(1)>table>tbody>tr:nth-child(2)>td:nth-child(3) {
+  min-width: 150px;
+}
+
+.tt-page-10968 #TBL11027>tbody>tr:nth-child(3)>td:nth-child(1)>table>tbody>tr:nth-child(1)>th:nth-child(1) {
+  min-width: 170px;
+}
+
+.tt-page-11182 #TBLsubscription-tickets {
+  width: 420px;
+}
+
+.tt-page-11182 #TBLpayment_details {
+  margin: 45px 5px;
+}
+
+.tt-page-11182 #TBL786 {
+  margin: 0 10px;
+}
+
+.tt-page-11182 .pp-order-summary {
+  width: 500px !important;
+  margin-right: 10px;
+}
+
+/*widens Review Your Order table on sub checkout screen*/
+.tt-page-756 #TBLleft_side>tbody>tr:nth-child(2)>td>table {
+  width: 500px !important;
+  /* margin-right: 10px; */
+}
+
+/*highlights performance series on Select Perf Series Page*/
+.tt-page-10968 #TBL11027 .subscription_select_row {
+  background: #13a69f0d;
+}
+
+/*Formats Retail Page */
+.tt-page-4102 .htable th {
+  background: #001e62;
+}
+
+.tt-page-4102 #TBLitems td {
+  vertical-align: middle;
+}
+
+.tt-page-4102 #TBLitems tr td {
+  background: #f4f4f4;
+  padding: 16px 10px;
+  font-weight: bold;
+}
+
+.tt-page-4102 #TBLitems tr:nth-child(odd) td {
+  background: #dedede;
+}
+
+.tt-page-4102 #TBL5776 {
+  border: none;
+  margin-left: 36px;
+}
+
+.tt-page-4102 #gift_cert_intro p {
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+.tt-page-4102 #TBL5776 td {
+  padding: 10px 0;
+}
+
+.tt-page-4102 #TBL4146 {
+  background: #eee;
+}
+
+.tt-page-4102 #TBL4146>tbody>tr>td {
+  padding: 16px;
+}
+
+.tt-page-4102 #BTNitem_add {
+  margin-bottom: 16px;
+}
+
+.tt-page-4135 #TBL4139 img {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.tt-page-4135 #TXT4140 {
+  margin-right: 20px;
+}
+
+/*Formats Membership Page */
+.tt-page-8573 #membership_level_table th {
+  background: #001e62;
+}
+
+.tt-page-8573 #membership_level_table td {
+  padding: 10px 10px;
+}
+
+.tt-page-8573 #membership_level_table tr td {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.tt-page-8573 #membership_level_table tr:nth-child(odd) td {
+  background: #ddd;
+  color: #333;
+}
+
+.tt-page-8573 #membership_level_table li {
+  list-style: disc;
+}
+
+/* This fixes formatting on Donation Page*/
+.tt-page-3465 #TBL4188 .leftCol {
+  width: 480px;
+  line-height: 1.6em;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.tt-page-3465 #\33 469>h1 {
+  margin-bottom: 25px;
+}
+
+/* This reduces the bottom margin for Person Types on the GA performance screen*/
+.tt-page-794 .ga-person-type-selector .person-type-container {
+  margin-bottom: 1px;
+}
+
+.confirmPPemail .well {
+  background-color: #12101b14;
+  margin-right: 10px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #12101b14;
+}
+
+/*Formats Passes Page */
+.tt-page-6923 .htable th {
+  background: #001e62;
+}
+
+.tt-page-6923 #TBLpasses {
+  margin-top: 10px;
+}
+
+.tt-page-6923 #TXTpass_description {
+  font-weight: 400;
+  color: #333333;
+}
+
+.tt-page-6923 #TXTpass_description li {
+  font-weight: 700;
+  list-style: disc;
+}
+
+.tt-page-6923 #TBLpasses td {
+  /* vertical-align:middle; */
+}
+
+.tt-page-6923 #TBLpasses tr td {
+  background: #f4f4f4;
+  padding: 16px 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.tt-page-6923 #TBLpasses tr:nth-child(odd) td {
+  background: #dedede;
+}
+
+.tt-page-6923 #TXTpass_name {
+  color: #333333;
+}
+
+.tt-page-6923 #TXTpass_cost {
+  color: #333333;
+}
+
+/*Passes on Retail Page */
+.tt-page-4102 #TBLpasses tr:nth-child(even) td {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.tt-page-4102 #TBLpasses tr:nth-child(odd) td {
+  background: #dedede;
+  color: #333;
+}
+
+.tt-page-4102 #pass_name {
+  color: #333;
+}
+
+.tt-page-4102 #pass_cost {
+  color: #333;
+}
+
+.tt-page-4102 #TBLpasses {
+  margin-top: 35px;
+}
+
+.tt-page-4102 #TBLpasses tr td {
+  background: #f4f4f4;
+  padding: 16px 10px;
+}
+
+.tt-page-4102 #pass_description {
+  color: #333;
+}
+
+.tt-page-4102 #TBLitems .normal {
+  color: #333;
+}
+
+/*Formats Enrollment Page */
+.tt-page-9498 #TBLclassList li {
+  list-style: disc;
+}
+
+.tt-page-9498 #TRselect_term li {
+  list-style: disc;
+}
+
+.tt-page-9498 .TBLclassList tr td {
+  background: #f4f4f4;
+  padding: 16px 10px;
+}
+
+.tt-page-6923 .TBLclassList tr:nth-child(odd) td {
+  background: #dedede;
+}
+
+.tt-page-6923 .TBLclassList tr:nth-child(even) td {
+  background: #f4f4f4;
+}
+
+.tt-page-9498 .TBLclassList tr:nth-child(odd) td {
+  background: #dedede;
+}
+
+.tt-page-9498 .TBLclassList tr:nth-child(even) td {
+  background: #f4f4f4;
+}
+
+.tt-page-9498 .table-bordered th, .tt-page-9498 .table-bordered td {
+  border: 0;
+}
+
+.tt-page-9498 .table-bordered th {
+  text-align: center;
+}
+
+.tt-page-9498 .table-bordered td {
+  border-bottom: 1px solid #ddd;
+}
+
+#TBLclassList>tbody>tr:nth-child(1)>th:nth-child(3) {
+  min-width: 150px;
+}
+
+#TBLclassList>tbody>tr:nth-child(n)>td:nth-child(3) {
+  text-align: center;
+}
+
+/* adds Click Here to Register on class Page*/
+.tt-page-9498 .restore_pos:before {
+  content: "CLICK HERE TO REGISTER:\A ";
+  white-space: pre;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Formats "I agree to the release" button to match btn-primary */
+.tt-page-9512 #BTN9517 {
+  color: #fff;
+  background-color: #1a69bd;
+  border-color: #000000;
+}
+
+/* Formats "I agree to the release" button to match btn-primary */
+.tt-page-9512 #BTN9517:hover {
+  color: #fff;
+  background-color: #144f8e;
+  border-color: #000000;
+}
+
+/*centers seating chart*/
+.tt-page-148 #TBL244 {
+  margin: 0 auto;
+  padding-left: 0px;
+}
+
+.seatmap-legend {
+  margin: 10px 0;
+  min-width: 690px;
+}
+
+/*Continue Shopping buttons to blue */
+#BTNbtn_continue_shopping {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #ccc;
+  margin-left: 5px;
+}
+
+#BTNbtn_continue_shopping:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #ccc;
+  margin-left: 5px;
+}
+
+#BTNbtn_continue {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #ccc;
+  margin-left: 5px;
+}
+
+#BTNbtn_continue:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #ccc;
+  margin-left: 5px;
+}

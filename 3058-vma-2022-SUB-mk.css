@@ -1,0 +1,72 @@
+/* Basic CSS for the subscription buy path */
+/* This element centers the "Step X" section */
+.progress_bar {
+  color: #000;
+  text-align: left;
+  width: 100%;
+}
+
+.tt-page-11102 .progress_bar {
+  color: #000;
+  text-align: left;
+  width: 110%;
+}
+
+.tt-page-11210 .progress_bar {
+  color: #000;
+  text-align: left;
+  width: 110%;
+}
+
+.tt-page-756 .progress_bar {
+  color: #000;
+  text-align: left;
+  width: 105%;
+}
+
+/* Causes the active step you are on within the shopping cart to be
+   a larger font, bold, and colored. */
+.curr_shopping_cart {
+  border: #000 solid 2px;
+  color: #000;
+  font-size: 140%;
+  font-weight: 900;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+/* Marks all other steps a dark grey. */
+.inactive_shopping_cart {
+  color: #c9c9c9;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.active_shopping_cart {
+  color: #bebebe;
+}
+
+.label_shopping_cart {
+  color: #cacaca;
+}
+
+/* Table below is where payment information is input.  This keeps the table to a moderate width. */
+#TBL11244 {
+  padding-left: 10px;
+  width: 250px;
+}
+
+/* Subscription - select series page */
+.subscription_series_name {
+  font-weight: bold;
+}
+
+/* Add vertical space between person type table and text above and below it */
+#TBLperson_types {
+  padding: 20px 0;
+}
+
+#TBLperson_types td {
+  padding-top: 5px;
+  padding-left: 15px;
+}
